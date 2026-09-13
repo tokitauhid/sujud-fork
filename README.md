@@ -1,163 +1,63 @@
 <div align="center">
-  <img src="./assets/logo.png" alt="Sujud Logo" width="150" height="150" style="border-radius: 24px;" />
+  <img src="./assets/logo.png" alt="Sujud Logo" width="120" height="120" style="border-radius: 20px;" />
   <h1>Sujud — سجود</h1>
   <p><em>A personal Salah tracker & habit companion for Android and the Web.</em></p>
 
+  <br />
+
+  # ⚠️ This Repository Has Moved! ⚠️
+
+  <h3>
+    Active development has officially moved to:<br /><br />
+    👉 <a href="https://github.com/tokitauhid/sujud">https://github.com/tokitauhid/sujud</a> 👈
+  </h3>
+
   <p>
-    <img src="https://img.shields.io/badge/Platform-Android%20%7C%20Web-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
-    <img src="https://img.shields.io/badge/Capacitor-119EFF?style=for-the-badge&logo=capacitor&logoColor=white" alt="Capacitor" />
-    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-    <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
+    <a href="https://github.com/tokitauhid/sujud"><img src="https://img.shields.io/badge/Repository-Moved_to_tokitauhid%2Fsujud-blue?style=for-the-badge&logo=github" alt="Repository Moved to tokitauhid/sujud" /></a>
+    <a href="https://github.com/tokitauhid/sujud/releases"><img src="https://img.shields.io/badge/Download-Latest_Releases-success?style=for-the-badge&logo=android" alt="Download Latest Releases" /></a>
   </p>
 </div>
 
 ---
 
-Sujud helps you log your daily prayers, analyse your consistency over time, and build a stronger connection with your Salah — one prostration at a time.
-
-## 📱 App Screenshots
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="25%">
-        <img src="./assets/screenshots/01_tracker.png" alt="Daily Tracker" width="100%" /><br />
-        <sub><b>Daily Tracker</b></sub>
-      </td>
-      <td align="center" width="25%">
-        <img src="./assets/screenshots/02_stats.png" alt="Progress Stats" width="100%" /><br />
-        <sub><b>Progress & Streaks</b></sub>
-      </td>
-      <td align="center" width="25%">
-        <img src="./assets/screenshots/03_prayers.png" alt="Prayer Times" width="100%" /><br />
-        <sub><b>Prayer Times</b></sub>
-      </td>
-      <td align="center" width="25%">
-        <img src="./assets/screenshots/04_settings.png" alt="Settings & Config" width="100%" /><br />
-        <sub><b>Configuration</b></sub>
-      </td>
-    </tr>
-  </table>
-</div>
-
-## ✨ Features
-
-- 📿 **Prayer Tracking** — Log each of your five daily prayers with a simple tap.
-- 🔔 **Smart Notifications** — Adhan alerts and gentle post-prayer logging reminders.
-- 🌐 **Cloud Sync** — Seamlessly sync across all your devices using Google Sign-In and Firebase.
-
-### 🚧 Coming Soon
-- 📊 **Trend Analysis** — Beautiful weekly, monthly, and yearly reports with visual charts.
-- 🗒️ **Notes** — Attach personal reminders for du'as and adhkar to any prayer.
-- 🎨 **Themes** — Multiple colour themes, including a pure OLED black mode.
-- 📅 **Hijri Calendar** — Browse and reflect on your prayer history by Islamic date.
+> [!IMPORTANT]
+> **This repository (`tokitauhid/sujud-fork`) is deprecated and will no longer receive updates.**
+> All ongoing development, releases, bug fixes, and new features are actively maintained at:
+>
+> 🔗 **[github.com/tokitauhid/sujud](https://github.com/tokitauhid/sujud)**
 
 ---
 
-## 🛠️ Tech Stack
+### 🔄 Updating Your Git Remote
 
-| Layer | Technology |
-|---|---|
-| **Frontend** | React 18 + TypeScript + Vite |
-| **Mobile Runtime** | CapacitorJS (Android) |
-| **Styling** | Tailwind CSS, Framer Motion |
-| **UI Components** | Radix UI, Ionic React, Swiper |
-| **Prayer Times** | [Adhan](https://github.com/batoulapps/adhan-js) |
-| **Local Storage** | `@capacitor-community/sqlite` |
-| **Cloud Sync** | Firebase (Firestore + Google Auth) |
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- **Node.js** ≥ 18
-- **Android Studio** (for Android builds)
-
-### Install
+If you have an existing clone of this repository, update your git remote URL to point to the new location:
 
 ```bash
-git clone https://github.com/tokitauhid/sujud.git
-cd sujud
-npm install
-```
-
-### Environment Variables
-Copy `.env.example` to `.env` and fill in your Firebase credentials:
-```bash
-cp .env.example .env
-```
-
-### Development
-```bash
-# Web dev server
-npm run dev
-
-# Build
-npm run build
-
-# Sync to Android
-npx cap sync android
-
-# Open in Android Studio
-npx cap open android
+git remote set-url origin https://github.com/tokitauhid/sujud.git
+git fetch origin
+git branch -u origin/main main
 ```
 
 ---
 
-## 🧪 Testing
+### 📱 About Sujud
 
-```bash
-npm test          # Run unit tests (Vitest)
-npm run test:ui   # Open Vitest UI
-npm run lint      # Run ESLint
-```
+**Sujud** is a data-driven Salah tracker and habit companion for Android and the Web. It helps you log your daily prayers, analyse consistency with rich trend analytics, and build a stronger connection with your Salah.
 
----
-
-## 📱 Building for Mobile
-
-To generate web bundles and sync with the Android native project:
-```bash
-npm run build
-npx cap sync android
-npx cap open android
-```
+Head over to [**tokitauhid/sujud**](https://github.com/tokitauhid/sujud) for:
+- 🚀 Complete installation and setup guide
+- 📱 Latest APK releases and build instructions
+- 📊 Feature breakdown (trend analysis, reflections, adhan notifications)
+- 🤝 Contributing guidelines and issue tracking
 
 ---
 
-## 📦 Releasing & Versioning
+### 🙏 Credits & Attribution
 
-Sujud includes an automated release script to easily bump versions and trigger GitHub Action builds:
-
-```bash
-# Bumps the patch version (e.g. 1.0.0 -> 1.0.1)
-npm run release
-
-# Bump minor version (e.g. 1.0.1 -> 1.1.0)
-npm run release minor
-
-# Bump major version (e.g. 1.1.0 -> 2.0.0)
-npm run release major
-```
-
-This script will automatically:
-1. Update `package.json` version.
-2. Increment `versionCode` and `versionName` in `android/app/build.gradle`.
-3. Commit the changes and tag the release.
-4. Prompt you to push the tags to GitHub (triggering the `release-apk.yml` workflow).
+Sujud is a fork of **[My Salah App](https://github.com/My-Ummah-Apps/My-Salah-App)** — originally created and maintained by [My Ummah Apps](https://github.com/mpmua). Full credit and deep gratitude go to the original authors for creating an incredible open-source foundation for the Muslim community.
 
 ---
 
-## 🙏 Credits & Attribution
-
-Sujud is a fork of **[My Salah App](https://github.com/My-Ummah-Apps/My-Salah-App)** — originally created and maintained by [My Ummah Apps](https://github.com/TheFlyingDonut). The core prayer tracking engine, architecture, and design foundations were built by the original author. Full credit and deep gratitude go to them for creating such an incredible open-source tool for the Muslim community.
-
-If you find this app useful, please also ⭐ the [original project](https://github.com/My-Ummah-Apps/My-Salah-App).
-
----
-
-## 📄 Licence
+### 📄 Licence
 
 MIT — see [LICENSE](./LICENSE) for details.
